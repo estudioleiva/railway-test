@@ -1,5 +1,7 @@
+from fastapi import FastAPI
 
-print("Servidor Python funcionando correctamente 🚀")
+app = FastAPI()
 
-for i in range(5):
-    print(f"Línea de prueba {i}")
+@app.get("/")
+def root():
+    return {"mensaje": "Servidor Python activo 🚀"}
