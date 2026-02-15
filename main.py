@@ -1,3 +1,5 @@
+print("Deploy nuevo con endpoint analizar activo")
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 
